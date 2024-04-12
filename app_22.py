@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-#import numpy as np
+import numpy as np
 from pycaret.regression import load_model, predict_model
 
 st.set_page_config(page_title="Modelo de Predicción de Resultados de Anuncios")
@@ -16,7 +16,7 @@ def predict(model, df):
 model = get_model()
 
 st.title("Modelo de Predicción de Resultados de Anuncios")
-st.markdown("Elija los valores para pronosticar el Resultado del Anuncio)")
+st.markdown("Elija los valores para pronosticar el Resultado del Anuncio")
 
 form = st.form("anuncios")
 importe_gastado = form.number_input('Importe', min_value = 0.0 , max_value = 20000.00,value=2000.00 , format = '%.2f', step = 1)
