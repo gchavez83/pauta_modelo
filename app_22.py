@@ -35,4 +35,4 @@ input_df = pd.DataFrame([input_dict])
 
 if predict_button: 
     out = predict(model, input_df)
-    st.success(f'La prediccion es {out}.')
+    st.success(f'La prediccion para Resultados Alcanzados es {out}.')
