@@ -19,7 +19,7 @@ st.title("Modelo de Predicción de Resultados de Anuncios")
 st.markdown("Elija los valores para pronosticar el Resultado del Anuncio")
 
 form = st.form("anuncios")
-importe_gastado = form.slider('importe_gastado', min_value = 0.0, max_value = 20000.00,value=0.0, format = '%f', step = 0.01)
+importe_gastado = form.number_input('importe_gastado', min_value = 0.0, max_value = 20000.00,value=0.0, format = '%f', step = 0.01)
 clasificacion_list = ['Atributos','Especiales','Estratégicas','Estratégico','Spots','Territorio']
 clasificacion_descripcion = form.selectbox('clasificacion_descripcion', clasificacion_list)
 objetivo_list = ['Interacción','ThruPlay']
